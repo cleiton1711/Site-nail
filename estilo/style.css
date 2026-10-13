@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face{ font-family: 'lux';
+           src:url('../fontes/Luxoorea.otf') format('opentype'); 
+             }
+
+.logo{
+    width: 650px ;
+    max-width: 95%;
+    max-height: 30%;
+    margin: -60px 0px -60px 0px;
+}             
+
+ .conteudo{
+    display: flex;
+    align-items: center;
+    background-color:var(--cor0);
+    border-radius: 20px;
+    color: var(--cor6);
+    margin: 0px 0px;
+
+ }
+
+ 
+
+ 
+.servico,
+.servico-02 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 20px;
+    color: var(--cor6);
+}
+
+.servico {
+    background-color: var(--cor1);
+}
+
+.servico-02 {
+    background-color: var(--cor0);
+    border-radius: 0px 30px 0px;
+}
+
+.servico > div,
+.servico-02 > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.imagem-tabela {
+    display: block;
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center;
+    border: 0.8px solid rgba(0, 0, 0, 0.555);
+    border-radius: 10px;
+}
+
+
+ .titulo-tabela{
+    text-align: center;
+    font-family: var(--fonte-lux);
+    text-decoration: underline;
+    
+ }
+ 
+ 
+       
+ 
+
+.cuidados{
+    text-align: left;
+    line-height: 40px;
+    margin: 15px 0px 0px 0px;
+   font-family: var(--fonte-principal);
+}
+
+
+
+ 
+
+:root{
+    --cor0:#efbf94dd;
+    --cor1:#FFE8E0;
+    --cor2:#E88E6F;
+    --cor3:#B0734A;
+    --cor4:#825436;
+    --cor5:#82280A;
+    --cor6:#4F2416;
+    
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-principal: 'Montserrat', cursive, sans-serif;
+    --fonte-lux: 'lux',cursive, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     background-image:linear-gradient(to right,
+    var(--cor1),var(--cor0),var(--cor1));
+    font-family: var(--fonte-padrao);
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    
+}
+
+header{
+    background-image: linear-gradient(to right , var(--cor1), var(--cor0), var(--cor1) );
+  
+    text-align: center;
+    padding: 30px 10px;   
+
+
+}
+
+header>h1 {
+    margin: 20px 0px 20px 0px;
+
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 50px;
+    height: auto;
+    padding: 8px 10px;
+    background-color: var(--cor5);
+    box-sizing: border-box;
+}
+
+nav > a {
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+nav > a:hover {
+    background-color: var(--cor0);
+    color: var(--cor5);
+}
+
+
+main{
+      background-color: var(--cor1);
+      min-width: 320px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.389);
+}
+main h2{
+    text-align: center;
+    color: var(--cor6);
+    padding: 20px 0px 20px 0px;
+    font-family: var(--fonte-lux);
+    text-decoration: underline;
+}
+main p{
+    text-align: center;
+}
+
+aside{
+    margin: 10px 0px 10px 0px;
+    background-color: var(--cor1);
+    
+}
+
+aside > h3{
+     
+    font-family: var(--fonte-lux);
+    text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.455);
+    
+    color: var(--cor1);
+    margin: 10px 0px 10px 0px;
+    background-image: linear-gradient(to right, var(--cor6
+    ), transparent);
+    text-indent: 8px;
+}
+
+    
+
+aside h4{
+    text-align: center;
+    
+}
+
+footer{
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: var(--cor6);
+    font-family: var(--fonte-lux);
+    text-decoration: none;
+    background-color: var(--cor0);
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.588);
+}
+footer a{
+    color: var(--cor6);
+    font-family: var(--fonte-lux);
+    text-decoration: none;
+    background-color: var(--cor0);
+    font-weight: bold;
+
+}
+footer a:hover{
+    background-color: var(--cor5);
+    color: var(--cor0);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+@media (max-width: 600px) 
+    .servico,
+    .servico-02 {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .imagem-tabela {
+        width: 110px;
+        height: 110px;
+    }
+
+
+
+@media (max-width: 400px) {
+    nav {
+        gap: 4px;
+        padding: 8px 5px;
+    }
+
+    nav > a {
+        padding: 5px 6px;
+        margin: 0;
+        font-size: 13px;
+    }
+}
+
+
